@@ -18,6 +18,7 @@ end
 service node['service_db'] do
 action [:start, :enable]
 end
+
 file "#{node['document_root']}/index.html" do
 owner 'root'
 group 'root'
